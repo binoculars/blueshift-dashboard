@@ -12,6 +12,8 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "precompile-mdx": "ts-node -r tsconfig-paths/register -P ./tsconfig.scripts.json ./scripts/precompile-mdx.ts",
     "generate-banners": "NEXT_PUBLIC_RELEASED_COURSES='*' NEXT_PUBLIC_RELEASED_CHALLENGES='*' ts-node -r tsconfig-paths/register -P ./tsconfig.scripts.json ./scripts/generate-banners.ts",
+    "add-lesson-titles": "ts-node -r tsconfig-paths/register -P ./tsconfig.scripts.json ./scripts/add-lesson-titles.ts",
+    "add-course-titles": "ts-node -r tsconfig-paths/register -P ./tsconfig.scripts.json ./scripts/add-course-titles.ts",
     "i18n:status": "pnpx lingo.dev@latest status",
     "i18n:translate": "pnpx lingo.dev@latest i18n"
   },
