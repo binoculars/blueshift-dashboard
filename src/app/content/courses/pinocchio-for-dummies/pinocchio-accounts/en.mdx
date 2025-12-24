@@ -446,7 +446,7 @@ impl AssociatedToken {
         system_program: &AccountInfo, 
         token_program: &AccountInfo
     ) -> ProgramResult {
-        match Self::check(account, payer, mint) {
+        match Self::check(account, payer, mint, token_program) {
             Ok(_) => Ok(()),
             Err(_) => Self::init(account, mint, payer, owner, system_program, token_program),
         }
